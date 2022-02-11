@@ -1,0 +1,205 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import './variable';
+@import './utility';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: $font;
+}
+    
+.App{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 110px;
+        font: $font;
+        
+    
+        .left_container{
+            background-image: url(./images/bg-hero.png);
+            flex: 1;
+            position: relative;
+            .first_overlay{
+                background-color: $blue;
+                position: absolute;
+                z-index: 1 ;
+                top: 0px;
+                left: -20px;
+                opacity: 0.5;
+                height: 68vh;
+                min-width: 600px;
+                .rectangle{
+                    width: 150px;
+                    height: 150px;
+                    background-color: transparent;
+                    border: 5px solid $white;
+                    position: inherit;
+                    top: 250px;
+                    left: 165px;
+                    opacity: 0.5;
+                
+                }
+                
+        
+
+            }
+            .nav{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                top: 40px;
+                left: -65px;
+            }
+            .logo{
+                height: 300px;
+                width: 400px;
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                z-index: 1;
+            }
+            .rectangle_text{
+                color: $white;
+                position: absolute;
+                top: 260px;
+                left: 200px;
+                width: 150px;
+                font-weight: bolder;
+                z-index: 2;
+
+                
+
+            }
+            
+
+            .second_overlay{
+                height: 32vh;
+                min-width: 600px;
+                bottom: 0px;
+                left: -20px;
+                position: absolute;
+                z-index: 1 ;
+                .lemon{
+                   background-color: $lemon;
+                   opacity: 0.5;
+                   flex: 1;
+                }
+                .green{
+                    background-color: $green;
+                    opacity: 0.5;
+                    flex: 1;
+                }
+            }
+            .address{
+                background-color: $blue;
+                color: $white;
+                width: 400px;
+                position: absolute;
+                left: -70px;
+                z-index: 2;
+                bottom: 40px;
+                justify-content: center;
+                img{
+                    height: 20px;
+                    width: 20px;
+                }
+                p{
+                    margin-left: 5px;
+                    font-size: 0.9rem;
+                }
+               
+            }
+        }
+
+
+
+
+
+        .right_container{
+           background-image: url(../src/images/bg-land.svg);
+           position: relative;
+           flex: 1;
+           .notification{
+            position: absolute;
+            z-index: 1;
+            top: 30px;
+            left: 300px;
+            
+                  
+               button{
+                   background-color: $red;
+                   border: none;
+                   color: $white;
+                   padding: 10px 20px;
+                   margin-right: 10px;
+                  
+               }
+               img{
+                   height: 30px;
+                   width: 30px;
+               }
+           }
+           .quote_img{
+               position: absolute;
+               top: 200px;
+              right: 400px;
+               z-index: 1;
+               img{
+                   width: 120px;
+                   height: 120px;
+                   
+               }
+           }
+           .right_content{
+               color: $blue;
+               width: 55%;
+               justify-content: center;
+               margin-top: 150px;
+                line-height: 1.6rem;
+                h2{
+                    font-weight: bolder;
+                    font-size:40px ;
+                }
+                .icons{
+                    justify-content: space-between;
+                    .icon{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                        h6{
+                            color: black;
+                        }
+                    }
+                }
+            
+
+           }
+           .user{
+               width: 70px;
+               height: 70px;
+               border-radius: 50%;
+               background-color: $blue;
+               position: absolute;
+               left: 480px;
+               bottom: 30px;
+               align-items: center;
+               justify-content: center;
+               padding-top: 25px;
+               
+               img{
+                   width: 15px;
+                   height: 15px;
+                   display: block;
+                   margin: auto;
+                   
+               }
+           }
+           
+        }
+
+}
