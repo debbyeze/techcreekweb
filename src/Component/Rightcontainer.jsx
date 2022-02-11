@@ -17,7 +17,8 @@ const Rightcontainer = () => {
             <img src={quote} alt="" />
           </div>
            <div className="container right_content">
-           <h2>Welcome to the Creek </h2>
+           <h2>Welcome</h2>
+           <h2>to the Creek </h2>
            <p>TechCreek is a habitat for the teeming population of youths making sense of their lives with their digital skills and competencies, and actively involved in the development of the ‘new economy’ from Rivers State.</p>
 
            <div className='icons pt-4 d-flex'>
