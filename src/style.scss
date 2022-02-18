@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: $font;
+    font-family: 'Rubik Regular';
 }
     
 .App{
@@ -15,104 +15,121 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 0px 110px;
-        font: $font;
+        font-family: 'Rubik Regular';
+
+        position: relative;
         
     
         .left_container{
-            background-image: url(./images/bg-hero.png);
+            background-color: $white;
             flex: 1;
-            position: relative;
-            .first_overlay{
-                background-color: $blue;
+            padding-left: 110px;
+            position: inherit;
+
+            .nav{
                 position: absolute;
-                z-index: 1 ;
-                top: 0px;
-                left: -20px;
-                opacity: 0.5;
-                height: 68vh;
-                min-width: 600px;
-                .rectangle{
-                    width: 150px;
-                    height: 150px;
-                    background-color: transparent;
-                    border: 5px solid $white;
-                    position: inherit;
-                    top: 250px;
-                    left: 165px;
-                    opacity: 0.5;
-                
+                width: 20px;
+                height: 20px;
+                left: 2%;
+                top: 10%;
+                :hover {
+                    cursor: pointer;
+            
                 }
                 
-        
-
-            }
-            .nav{
-                height: 20px;
-                width: 20px;
-                position: absolute;
-                top: 40px;
-                left: -65px;
-            }
-            .logo{
-                height: 300px;
-                width: 400px;
-                position: absolute;
-                top: 40px;
-                left: 40px;
-                z-index: 1;
-            }
-            .rectangle_text{
-                color: $white;
-                position: absolute;
-                top: 260px;
-                left: 200px;
-                width: 150px;
-                font-weight: bolder;
-                z-index: 2;
-
                 
+            }
+            .bg_img{
+                background-image: url(./images/bg-hero.png);
+                max-height: 100vh;
+                width: 525px;
+                position: relative;
+                
+                .first_overlay{
+                    height: 65vh;
+                    width: 525px;
+                    position: relative;
+                    .top_overlay{
+                        background-color: $blue;
+                        height: 65vh;
+                        opacity: 0.47;
+                        
+                    }
+                    
+                    
+                   
+                    .logo{
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        top: 37px;
+                        left: 50px;
+                    }
+                    .rectangle{
+                        position:absolute;
+                        top: 195px;
+                        left: 140px;
+                        opacity: 0.5;
+                        width: 140px;
+                        height: 150px;
+                        border: 5px solid $white;
+                        
+                    }
+                    .rectangle_text{
+                        
+                        width: 100px;
+                        position: absolute;
+                        top: 2209px;
+                        left: 185px;
+                        
 
+                    
+                        h2{
+                            color: $white;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+                .second_overlay{
+                    height: 35vh;
+                    width: 525px;
+                    position: relative;
+                    
+                    .lemon_overlay{
+                       background-color: $lemon;
+                       opacity: 0.9;
+                       flex: 1;
+
+                    }
+                    .green_overlay{
+                        background-color: $green;
+                        opacity: 0.9;
+                        flex: 1;
+                    }
+                    .address{
+                        position: absolute;
+                        background-color: $blue;
+                        color: $white;
+                        width: 400px;
+                        bottom: 50px;
+                        left: -40px;
+                        animation: slideInFromLeft 2s ease-in;
+                        
+                        
+                        img{
+                          height: 20px;
+                          width: 20px;
+                          
+                        }
+                        p{
+                            margin-left: 8px;
+                            animation: slideInFromLeft 3s ease-in;
+                        }
+                    }
+                }
             }
             
-
-            .second_overlay{
-                height: 32vh;
-                min-width: 600px;
-                bottom: 0px;
-                left: -20px;
-                position: absolute;
-                z-index: 1 ;
-                .lemon{
-                   background-color: $lemon;
-                   opacity: 0.5;
-                   flex: 1;
-                }
-                .green{
-                    background-color: $green;
-                    opacity: 0.5;
-                    flex: 1;
-                }
-            }
-            .address{
-                background-color: $blue;
-                color: $white;
-                width: 400px;
-                position: absolute;
-                left: -70px;
-                z-index: 2;
-                bottom: 40px;
-                justify-content: center;
-                img{
-                    height: 20px;
-                    width: 20px;
-                }
-                p{
-                    margin-left: 5px;
-                    font-size: 0.9rem;
-                }
-               
-            }
+           
         }
 
 
@@ -202,8 +219,55 @@
                    margin: auto;
                    
                }
+               
            }
            
         }
+       
+.nav_body{
 
+    background-color: $blue;
+    z-index: 3;
+    opacity: 0.94;
+    height: 100vh;
+    width: 100%;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    position: absolute;
+    top: 0px ;
+    
+    .nav_close{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .nav{
+        padding-top: 10vh;
+       justify-content: center;
+       width: 100%;
+       z-index: 4;
+        ul{
+    
+            li{
+                list-style-type: none;
+                margin-top: 50px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 38px;
+                    font-weight: bolder;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+}
+
+.nav_none{
+    display: none;
 }
