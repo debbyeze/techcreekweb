@@ -1,5 +1,26 @@
 @import '/src/utility';
 @import '/src/variable';
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.learn_container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    .navbar{
+        .nav{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 40px;
+            :hover {
+                cursor: pointer;
+        
+            }
+        }
+    }
+}
 
