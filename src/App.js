@@ -1,22 +1,27 @@
+import React from 'react';
 import './App.css';
 import './style.scss';
-import Leftcontainer from './Component/Leftcontainer';
-import Rightcontainer from './Component/Rightcontainer';
-import Navbar from './Component/Navbar';
-import {useState} from 'react';
+import './Component/Main';
+import '../src/Component/navbar.scss';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Main from './Component/Main';
+import Learn from './Component/pages/Learn';
+
+
 
 function App() {
-  const [nav, setNavbar] = useState (false);
-    const handlenavbar = () => setNavbar (!nav);
+  
   return (
-    <div className="App">
-      <Leftcontainer handlenavbar={handlenavbar}/>
-      <Rightcontainer/>
-      <Navbar handlenavbar={handlenavbar} nav={nav}/>
-    
-      
-      
-    </div>
+    <>
+  
+     <Router>
+       <Routes>
+         <Route path='/' element = {<Main/>}/>
+         <Route path='/Learn' element = {<Learn/>}/>
+       </Routes>
+     </Router>
+
+    </>
   );
 }
 

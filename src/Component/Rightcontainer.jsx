@@ -7,7 +7,7 @@ import member from '../images/ic_member.svg';
 
 const Rightcontainer = () => {
     return (
-        <div className=" right_container bg_img ">
+        <div className=" right_container ">
           <div className='notification d-flex'>
             <button>Ongoing Application</button>
             <img src={bell} alt="" />

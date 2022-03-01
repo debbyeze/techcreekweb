@@ -13,3 +13,14 @@
       transform: translateX(0);
     }
   }
+
+  @keyframes slideOutFromRight {
+    
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+    
+  }

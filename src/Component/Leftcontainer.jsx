@@ -2,14 +2,15 @@
 import logo from "../images/logo-white.png";
 import navbar from "../images/ic_nav_toggle.svg";
 import location from "../images/ic_location_gr_2.svg"
-import { useState } from "react";
-import Navbar from "./Navbar";
-const Leftcontainer = ({ handlenavbar }) => {
+
+
+
     
+const Leftcontainer = ({handlenavbar}) => {
     
     return ( 
         <div className=" left_container">
-            <div className="nav" >
+             <div className="nav" >
                  <img src={navbar} alt=""  onClick={handlenavbar}/>
              </div>
             <div className="bg_img">
@@ -17,7 +18,7 @@ const Leftcontainer = ({ handlenavbar }) => {
                     <div className="top_overlay"></div>
                     
                     <div className="logo">
-                        <img src={logo}/>
+                        <img src={logo} alt=""/>
                     </div>
                     <div className="rectangle"></div>
                     <div className="rectangle_text">
@@ -66,7 +67,8 @@ const Leftcontainer = ({ handlenavbar }) => {
 
              </div> */}
         </div>
-     );
-}
+     )
+  };
+
  
 export default Leftcontainer;

@@ -10,10 +10,9 @@
     font-family: 'Rubik Regular';
 }
     
-.App{
+.main{
         height: 100vh;
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
         font-family: 'Rubik Regular';
 
@@ -26,16 +25,18 @@
             padding-left: 110px;
             position: inherit;
 
-            .nav{
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left: 2%;
-                top: 10%;
-                :hover {
-                    cursor: pointer;
+           .nav{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 4%;
+            top: 10%;
+            :hover {
+                cursor: pointer;
+        
+            }
+    
             
-                }
                 
                 
             }
@@ -79,7 +80,7 @@
                         
                         width: 100px;
                         position: absolute;
-                        top: 2209px;
+                        top: 220px;
                         left: 185px;
                         
 
@@ -123,7 +124,7 @@
                         }
                         p{
                             margin-left: 8px;
-                            animation: slideInFromLeft 3s ease-in;
+                            animation: slideInFromLeft 2s ease-in;
                         }
                     }
                 }
@@ -138,7 +139,7 @@
 
         .right_container{
            background-image: url(../src/images/bg-land.svg);
-           position: relative;
+           position: inherit;
            flex: 1;
            .notification{
             position: absolute;
@@ -223,51 +224,4 @@
            }
            
         }
-       
-.nav_body{
-
-    background-color: $blue;
-    z-index: 3;
-    opacity: 0.94;
-    height: 100vh;
-    width: 100%;
-    display: fixed;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    position: absolute;
-    top: 0px ;
-    
-    .nav_close{
-        width: 15px;
-        height: 15px;
-    }
-    
-    .nav{
-        padding-top: 10vh;
-       justify-content: center;
-       width: 100%;
-       z-index: 4;
-        ul{
-    
-            li{
-                list-style-type: none;
-                margin-top: 50px;
-                align-items: center;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    color: $white;
-                    font-size: 38px;
-                    font-weight: bolder;
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
-}
-
-.nav_none{
-    display: none;
-}
+ }
